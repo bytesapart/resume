@@ -1,0 +1,248 @@
+%-------------------------------------
+% Resume Template
+% Author: Osama Iqbal
+% Github: https://github.com/bytesapart
+% License: MIT
+% -------------------------------------
+
+% ===== Document Preamble =====
+% Define a document of font 11 points, size that of US letter and of type "article" (Which is generic).
+% Define a pagestyle as empty, that is no headers and footers.
+% Make intercolumnar space to 0em.
+\documentclass[11pt,a4paper]{article}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% ===== Packages =====
+% Use geometry package specifing letterpaper as page size and margin as 0.5 inches.
+% Use the inputenc package, specifying the encoding as UTF-8
+% Use the package mdwlist package for making lists and bullet points.
+% Use the Lato package as font and/or use Opensans
+% Use fontenc T1 so that we have 8 bit encoding for fonts, and hence, can use glyphs.
+% Use textcomp package for symbols such as bullets.
+% Use the fontawesome package for fontawesome.
+% Use the enumitem for enumerations.
+% Use the hyperref for href
+\usepackage[a4paper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+% \usepackage[default]{lato}
+% Alternative to Lato font
+\usepackage[default,scale=0.9]{opensans}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+% \usepackage{url}
+\usepackage{hyperref}
+
+% ===== Fonts to use =====
+% Declare the font families to use, make an alias for FontAwesome to fontawesomeone
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+{<-> FontAwesome--fontawesomeone}{}
+
+% ===== Create a new command ====
+% Create a command FAOne, that sets fontenconding, sets font family and selects the font, that is, fontawesome.
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
+\makeatletter %% <- change @ so that it can be used in command sequences
+\def\myrulefill#1#2{\leavevmode\leaders\hrule\@height#1\@depth#2\hfill \kern\z@}
+\makeatother %% <- change @ back
+
+% Centered w.r.t. the capital letter X
+% \newcommand*\crulefill[1]{\myrulefill
+%   {\dimexpr(\fontcharht\font`X+#1)/2}{\dimexpr(-\fontcharht\font`X+#1)/2}}
+% Centered w.r.t. the small letter x
+\newcommand*\crulefill[1]{\myrulefill{\dimexpr(1ex+#1)/2}{\dimexpr(-1ex+#1)/2}}
+
+
+% ===== Indent Section Style =====
+% Used for sections that are not already in lists that need indentation to the level of all text in the document.
+\newenvironment{indentsection}[1]
+{\begin{list}{}
+{\setlength{\leftmargin}{#1}}
+  \item[]
+}
+{\end{list}}
+
+
+% ===== Unindent Section Style 
+% Opposite of the above. Bump a section back toward the left margin
+\newenvironment{unindentsecion}[1]
+{\begin{list}{}
+{\setlength{\leftmargin}{-0.5#1}}
+\item[]
+}
+{\end{list}}
+
+% ===== Formatting two pieces of text together ====
+% Format two pieces of text, one left alighned and one right alighned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+% ===== C++ specific formatting ====
+% Make "C++" look pretty when used in text by touching up the plus signs.
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-0.5em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% ===== Resume Starts Here ====
+% Actual content starts here
+\begin{document}
+
+% ===== Begin Header of the Resume =====
+\begin{center}
+        {\LARGE \textbf{Osama Iqbal}}\\
+        Mumbai, India
+        \vspace{0.05cm}
+        \\
+        \raisebox{-0.2\height} {\Large \faPhoneSquare} \ \ \href{tel:+919867143600}{+91-9867143600} \hfill\raisebox{-0.2\height}{\Large \faEnvelopeSquare} \ \ \href{mailto:iqbal.osama@icloud.com}{iqbal.osama@icloud.com} \hfill \raisebox{-0.2\height}{\Large \faGithubSquare} \ \ \href{https://github.com/bytesapart}{github.com/bytesapart} \hfill \raisebox{-0.2\height}{\Large \faLinkedinSquare} \ \ \href{https://linkedin.com/in/osamaiqbal}{linkedin.com/in/osamaiqbal}
+\end{center}
+
+% ===== End Header of the Resume =====
+
+% ===== Begin Experince Section =====
+\vspace{-1em}
+\subsection*{\Large Experience \emph{[5 Years 8 Months]} \crulefill{1pt}}
+
+\renewcommand\labelitemi{}
+\renewcommand\labelitemii{$\bullet$}
+\begin{itemize}[leftmargin=1em]
+        \parskip=0.1em
+
+% ===== Begin CPP, IB Experience =====
+        \item
+              \headerrow
+              {\textbf{Canada Pension Plan, Investment Banking}}
+              {\textbf{Mumbai, India}}
+              \headerrow
+              {\emph{Associate Software Engineer}}
+              {\emph{March 2022 -- Present}}
+              \begin{itemize*}
+                \item Led and Implemented OneTick Time Series Database Migration from on-prem to AWS cloud, creating and implementing custom AWS Architecture.
+                \item \textbf{Technologies:} AWS, OneTick Timeseries, AWS DataSync, AWS Lambda, AWS EC2, AWS Aurora, AWS SNS, AWS SQS, AWS EFS, AWS Storage Gateway, C++ MFC.
+              \end{itemize*}
+% ===== End CPP, IB Experience =====
+
+        
+% ===== Begin Nomura Experience Section =====
+        \item
+              \headerrow
+              {\textbf{Nomura Services India Pvt. Ltd.}}
+              {\textbf{Mumbai, India}}
+% ===== Nomura Associate Software Developer =====
+              \headerrow
+              {\emph{Associate Software Developer}}
+              {\emph{May 2020 -- March 2022}}
+              \begin{itemize*}
+                \item Strengthened distributed grid computing to calculate all risks and aggregations, using spare compute cycles from more than 1000 computers in Nomura.
+                \item Pioneered an easier deployment mechanism for computing grid packages to machines, saving 1 hour of support time per deployment.
+                \item {\textbf{Technologies:}} C++, Boost, Clang, C\#, ASM, OpenMP, Intel Intrinsics, AVX2, Jenkins CI/CD, AWS, Docker, TDD.
+              \end{itemize*}
+% ===== Nomura Senior Software Development Analyst Experience =====
+              \headerrow
+              {\emph{Senior Software Development Analyst}}
+              {\emph{October 2018 -- May 2020}}
+              \begin{itemize*}
+                \item Led end-to-end development of a business-critical engine, decoupling developers and business analysts, leading to 200+ rule change deployments per day which parses 130k+ live trades.
+                \item Optimized rules engine, improving time from 15 seconds to 70 milliseconds per trade leading to decommissioning of HPC servers.
+                \item Led the adoption of the rules engine for inter-system translations and communications between 4 systems.
+                \item {\textbf{Technologies:}} Python, pandas, numpy, Cython, AST, Jupyter, Tibco EMS, Seaborn, Dash, VBA, TDD.
+              \end{itemize*}
+
+% ===== Nomura Software Development Analyst Experience =====
+              \headerrow
+              {\emph{Software Development Analyst}}
+              {\emph{July 2016 -- October 2018}}
+              \begin{itemize*}
+                \item Implemented Common Risk Interchange Format’s (CRIF) Risk data aggregations for 12 legal entities, containing ~500K data points each.
+                \item Strengthened quant analytical library by adding 4 different cold-start multi-processing functions.
+                \item {\textbf{Technologies:}} Python, PySpark, MapReduce, Hadoop, Dask, Flask, Django, multiproc and multithread libraries, TDD.
+              \end{itemize*}
+
+% ===== Nomura Software Development Intern Experience =====
+              \headerrow
+              {\emph{Software Development Intern}}
+              {\emph{January 2016 -- July 2016}}
+              \begin{itemize*}
+                \item Conceived a GUI tool that makes FIX 4.4 protocol messages, sending 10k messages to an Exchange Simulator.
+                \item Created a client-server socket-based distributed test-case runner configured on spare machines - running 7k test cases simultaneously.
+                \item \textbf{Technologies:} Python, QuickFix, win32com, websocket library, PHP, Bootstrap, Javascript, jQuery.
+
+              \end{itemize*}
+
+% ===== End Nomura Experience =====
+
+\end{itemize}
+% ===== End Experience Section =====
+
+% ===== Begin Education Section =====
+% \pagebreak
+% \hrule
+\vspace{-1em}
+\subsection*{\Large Education \crulefill{1pt}} 
+
+\begin{itemize}[leftmargin=1em,noitemsep]
+    \parskip=0.1em
+
+      \item
+            \headerrow
+            {\textbf{WorldQuant University}}
+            {\textbf{Mumbai, India}}
+            \headerrow
+            {\emph{M.S. Quantitative Finance} \textbf{(80.0\%/100.0\%)}}
+            {\emph{January 2017 -- January 2019}}
+
+            \headerrow
+            {\textbf{Sardar Patel Institute of Technology, Mumbai University}}
+            {\textbf{Mumbai, India}}
+            \headerrow
+            {\emph{Master of Computer Application} \textbf{(GPA: 8.29/10.0)}}
+            {\emph{July 2014 -- July 2016}}
+
+            \headerrow
+            {\textbf{Valia C.L. College of Science, Mumbai University}}
+            {\textbf{Mumbai, India}}
+            \headerrow
+            {\emph{Bachelor of Science (Information Technology) (82.5/100.0)}}
+            {\emph{July 2011 -- March 2014}}
+\end{itemize}
+
+% ===== End Education Section =====
+
+% ===== Begin Skills Section =====
+\vspace{-1em}
+\subsection*{\Large Skills and Certifications \crulefill{1pt}}
+
+\hyphenpenalty=1000
+\begin{itemize}[leftmargin=1em,noitemsep]
+% \begin{itemize}[leftmargin=1em]
+        \item \textbf{Languages:}
+              Python, C++, C\#, SQL
+        \item \textbf{Technologies:}
+              Pandas, Numpy, Dask, PySpark, Hadoop, Hive, MapReduce, Seaborn, Flask, Django, Cython, Boost, OpenMP, ASM, Intel Intrinsics, AVX2, Tibco EMS, Git, Github-Actions, Docker, Jupyter, Jenkins CI/CD, CMake, TDD.
+        % \item \textbf{Working Knowledge:}
+        %       PyTorch, Tensorflow, JAX, Reinforcement Learning, Deep Learning, Machine Learning, CUDA, C\#,Apache Kafka, Typescript, Javascipt, ReactJS, React Native, RESTful services, Microservices, ETL, Databricks, vtk.js, itk.js, Groovy, ElasticSearch, Logstash, Kibana, Bazel.
+        \item \textbf{Certifications: } AWS Certified Developer Associate, Datacamp Data Scientist with Python.
+\end{itemize}
+
+% ===== End Skills Section =====
+
+% ===== Begin Certification Section =====
+% \hrule
+% \vspace{-1em}
+% \subsection*{\Large Certifications}
+% \begin{itemize}[leftmargin=1em,noitemsep]
+%         \item \textbf{AWS:} Certified Developer Associate
+%         \item \textbf{Datacamp:} Data Scientist (Python)
+        % \item \textbf{Coursera: } Machine Learning
+        % \item \textbf{Deeplearning.ai: } Deeplearning Specialisation
+        % \item \textbf{Deeplearning.ai:} MLOps for Production
+% \end{itemize}
+% \hrule
+% ===== End Certification Section =====
+
+
+\end{document}
