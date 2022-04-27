@@ -3,8 +3,14 @@ A simple template in Latex, loosely based off of a Microsoft Word template calle
 
 The template is heavily documented in the form of comments, and can easily be modified.
 
+---
+
+
 ### Contributing
 Please feel free to fork, modify and create a PR (Pull Request) as you deem fit.
+
+---
+
 
 ### Additional Featuresets to implement
 i. Replicate fonts. At this time uses Lato or OpenSans.
