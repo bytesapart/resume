@@ -13,5 +13,5 @@ Please feel free to fork, modify and create a PR (Pull Request) as you deem fit.
 
 
 ### Additional Featuresets to implement
-i. Replicate fonts. At this time uses Lato or OpenSans.
-ii. Replicate some grey colouring in Dates.
+- Replicate fonts. At this time uses Lato or OpenSans.
+- Replicate some grey colouring in Dates.
