@@ -34,6 +34,7 @@
 \usepackage{fontawesome}
 \usepackage{enumitem}
 % \usepackage{url}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{hyperref}
 
 % ===== Fonts to use =====
@@ -45,6 +46,17 @@
 % ===== Create a new command ====
 % Create a command FAOne, that sets fontenconding, sets font family and selects the font, that is, fontawesome.
 \DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
+\makeatletter %% <- change @ so that it can be used in command sequences
+\def\myrulefill#1#2{\leavevmode\leaders\hrule\@height#1\@depth#2\hfill \kern\z@}
+\makeatother %% <- change @ back
+
+% Centered w.r.t. the capital letter X
+% \newcommand*\crulefill[1]{\myrulefill
+%   {\dimexpr(\fontcharht\font`X=#1)/2}{\dimeexpr(-\fontcharht\font`X+#1)/2}}
+% Centered w.r.t. the small letter x
+\newcommand*\crulefill[1]{\myrulefill{\dimexpr(1ex+#1)/2}{\dimexpr(-1ex+#1)/2}}
+
+\definecolor{CarianBlue}{HTML}{2A3FFB}
 
 % ===== Indent Section Style =====
 % Used for sections that are not already in lists that need indentation to the level of all text in the document.
@@ -86,17 +98,19 @@
 \begin{center}
         {\LARGE \textbf{Osama Iqbal}}\\
         Mumbai, India
-        \vspace{0.05cm}
         \\
+\end{center}
+Quantitative Developer with five and a half years of experience in creating, optimising and scaling trade reporting and trade validation engines in the fixed income sphere of financial institutions.
+\begin{center}
         \raisebox{-0.2\height} {\Large \faPhoneSquare} \ \ \href{tel:+919867143600}{+91-9867143600} \hfill\raisebox{-0.2\height}{\Large \faEnvelopeSquare} \ \ \href{mailto:iqbal.osama@icloud.com}{iqbal.osama@icloud.com} \hfill \raisebox{-0.2\height}{\Large \faGithubSquare} \ \ \href{https://github.com/bytesapart}{github.com/bytesapart} \hfill \raisebox{-0.2\height}{\Large \faLinkedinSquare} \ \ \href{https://linkedin.com/in/osamaiqbal}{linkedin.com/in/osamaiqbal}
 \end{center}
-
+% \vspace{-0.5cm}
 % ===== End Header of the Resume =====
 
 % ===== Begin Experince Section =====
-\hrule
+% \hrule
 \vspace{-1em}
-\subsection*{\Large Experience \emph{[5 Years 8 Months]}}
+\subsection*{\color{CarianBlue} \Large Experience \emph{(5 Years 8 Months)} \crulefill{1pt}}
 
 \renewcommand\labelitemi{}
 \renewcommand\labelitemii{$\bullet$}
@@ -110,7 +124,7 @@
               {\textbf{Mumbai, India}}
               \headerrow
               {\emph{Associate Software Engineer}}
-              {\emph{March 2022 -- Present}}
+              {\emph{March, 2022 -- Present}}
               \begin{itemize*}
                 \item Led and Implemented OneTick Time Series Database Migration from on-prem to AWS cloud, creating and implementing custom AWS Architecture.
                 \item Enhanced DASH Order Management System to encorporate Securities Borrowing and Lending Compliance quality-of-life improvements.
@@ -127,7 +141,7 @@
 % ===== Nomura Associate Software Developer =====
               \headerrow
               {\emph{Associate Software Developer}}
-              {\emph{May 2020 -- March 2022}}
+              {\emph{May, 2020 -- March, 2022}}
               \begin{itemize*}
                 \item Innovated on a fixed income quant library requiring optimising for low-level L3 cache for 50+ general-purpose functions.
                 \item Strengthened distributed grid computing to calculate all risks and aggregations, using spare compute cycles from more than 1000 computers in Nomura.
@@ -137,7 +151,7 @@
 % ===== Nomura Senior Software Development Analyst Experience =====
               \headerrow
               {\emph{Senior Software Development Analyst}}
-              {\emph{October 2018 -- May 2020}}
+              {\emph{October, 2018 -- May, 2020}}
               \begin{itemize*}
                 \item Engineered a business-critical Rules Engine based on rete algorithm parsing 130k+ live trades.
                 \item Led end-to-end development of the engine, enabling business analysts to write rules in English or Python, decoupling developers, leading to 200+ rule change deployments per day.
@@ -149,18 +163,19 @@
 % ===== Nomura Software Development Analyst Experience =====
               \headerrow
               {\emph{Software Development Analyst}}
-              {\emph{July 2016 -- October 2018}}
+              {\emph{July, 2016 -- October, 2018}}
               \begin{itemize*}
                 \item Implemented Common Risk Interchange Format’s (CRIF) Risk data aggregations for 12 legal entities, containing ~500K data points each.
                 \item Improved end of day file feeds of around 8K files for fixed income products, along with market data, in the form of curve objects, ~30 files per entity.
                 \item Strengthened quant analytical library by adding 4 different cold-start multi-processing functions.
+                \item Architectured end-to-end Collateral Sensitivity batches end-of-day batches for generating sensitivities report for fixed income assets. 
                 \item {\textbf{Technologies:}} Python, PySpark, MapReduce, Hadoop, Dask, Flask, Django, multiproc and multithread libraries, TDD.
               \end{itemize*}
 
 % ===== Nomura Software Development Intern Experience =====
               \headerrow
               {\emph{Software Development Intern}}
-              {\emph{January 2016 -- July 2016}}
+              {\emph{January, 2016 -- July, 2016}}
               \begin{itemize*}
                 \item Conceived a GUI tool that makes FIX 4.4 protocol messages, sending 10k messages to an Exchange Simulator.
                 \item Created a client-server socket-based distributed test-case runner configured on spare machines - running 7k test cases simultaneously.
@@ -169,17 +184,19 @@
 
               \end{itemize*}
 
+{\color{CarianBlue} \crulefill{1pt}}
+
 % ===== End Nomura Experience =====
 
 \end{itemize}
-\hrule
+% \hrule
 % ===== End Experience Section =====
 
 % ===== Begin Education Section =====
 \pagebreak
-\hrule
+% \hrule
 \vspace{-1em}
-\subsection*{\Large Education}
+\subsection*{\color{CarianBlue} \Large Education \crulefill{1pt}}
 
 \begin{itemize}[leftmargin=1em]
     \parskip=0.1em
@@ -210,9 +227,9 @@
 % ===== End Education Section =====
 
 % ===== Begin Skills Section =====
-\hrule
+% \hrule
 \vspace{-1em}
-\subsection*{\Large Skills}
+\subsection*{\color{CarianBlue} \Large Skills \crulefill{1pt}}
 
 \hyphenpenalty=1000
 % \begin{itemize}[leftmargin=1em,noitemsep]
@@ -228,18 +245,64 @@
 % ===== End Skills Section =====
 
 % ===== Begin Certification Section =====
-\hrule
+% \hrule
 \vspace{-1em}
-\subsection*{\Large Certifications}
+\subsection*{\color{CarianBlue} \Large Certifications \crulefill{1pt}}
 \begin{itemize}[leftmargin=1em,noitemsep]
         \item \textbf{AWS:} Certified Developer Associate
         \item \textbf{Datacamp:} Data Scientist (Python)
         \item \textbf{Coursera: } Machine Learning
-        \item \textbf{Deeplearning.ai: } Deeplearning Specialisation
-        \item \textbf{Deeplearning.ai:} MLOps for Production
+        \item \textbf{deeplearning.ai: } Deeplearning Specialisation
+        \item \textbf{deeplearning.ai:} MLops for Production
 \end{itemize}
-\hrule
+% \hrule
 % ===== End Certification Section =====
 
+% ===== Begin Other Experience Section ====
+% \vspace{-1em}
+% \subsection*{\color{CarianBlue} \Large Other Work Experiences \crulefill{1pt}}
+%
+% \renewcommand\labelitemi{}
+% \renewcommand\labelitemii{$\bullet$}
+%
+% \begin{itemize}[leftmargin=1em]
+%         \parskip=0.1em
+%
+%         \item
+%               \headerrow
+%               {\textbf{Freelancing}}
+%               {\textbf{Mumbai, India}}
+%               \headerrow
+%               {\emph{Freelancer}}
+%               {\emph{February, 2021 -- August 2021}}
+%               \begin{itemize*}
+%                 \item Delivered a recommendation engine for a short video application with 1k+ user base.
+%                 \item Developed CoviCough that uses MEL-sepstrum and biomarkers to detect COVID positivity based on coughs, modelled after an MIT research paper with data from EPFL, IISc’s containing 220k data.
+%                 \item Architected a system called “Pulmon” to visualize DICOM les and generate 2D/3D visualizations of CT-Scans or X-ray to detect 14 pulmonary diseases.
+%                 \item \textbf{Technologies:} vtkjs, itkjs, Reactjs, React Native, PyTorch. 
+%               \end{itemize*}
+% \end{itemize}
+% %
+% ===== End Other Experience Section =====
+
+% ===== Begin Interests Section ====
+
+\vspace{-1em}
+\subsection*{\color{CarianBlue} \Large Projects and Interests \crulefill{1pt}}
+
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\bullet$}
+
+
+\begin{itemize}[leftmargin=1em,noitemsep]
+        \item Led a Machine Learning class at Nomura.
+        \item Contributed to QMK/VIA Keyboard Firmware Open Source Project. 
+        \item Developed Vaccinator API for Covid-19 Vaccination Booking.
+        \item Created a Toy Compiler using LLVM.
+        \item Worked with FireSim and Chipyard for RISC-V Emulation.
+\end{itemize}
+
+% ===== End Interests Section =====
+{\color{CarianBlue} \hrule}
 
 \end{document}
