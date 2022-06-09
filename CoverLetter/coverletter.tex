@@ -1,0 +1,128 @@
+%-------------------------------------
+% Cover Letter Template
+% Author: Osama Iqbal
+% Github: https://github.com/bytesapart
+% License: MIT
+% -------------------------------------
+
+
+% ===== Define Document Type =====
+\documentclass[11pt,a4paper]{article}
+
+% ===== Packages =====
+% \usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+% \usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+% \usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr} % Fancy Header
+\usepackage{multicol} % multiple columns
+\usepackage{csquotes} % smart quotations
+\usepackage{tabularx} % Tabular data
+\hypersetup{colorlinks=true,urlcolor=black} % All urls as black
+\usepackage[11pt]{moresize} % Higher font size
+\usepackage{setspace} % Space between lines and documents
+\usepackage[dvipsnames]{xcolor} % For HTML Color
+% \usepackage{fontspec} % Interface for opentype fonts
+\usepackage[inline]{enumitem} % Enumerate an item
+\usepackage{ragged2e} % For ragged text
+\usepackage{anyfontsize} % Precision font adjustment 
+\usepackage[margin=1cm]{geometry} % Set margins
+% \usepackage[default,scale=0.9]{opensans} % Set the font typefonts
+% Alternative Font
+\usepackage[default]{lato}
+
+% ===== Set Page Style =====
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ===== Set URL Style =====
+\urlstyle{same}
+
+% ===== Set Indentation =====
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% ===== Set Secondary Color, Page Number Color, Footer Text =====
+\definecolor{CarianBlue}{HTML}{2A3FFB}
+\definecolor{CarianGrey}{HTML}{B3B3B3}
+\rfoot{{\color{CarianGrey} \thepage \ of \ 1, Updated \today}}
+
+
+% ===== Set Heading Format =====
+\titleformat{\section}{
+\color{CarianBlue} \scshape \raggedright \large 
+}{}{0em}{}[\vspace{-0.7cm} \hrulefill \vspace{-0.2cm}]
+
+
+\begin{document}
+
+% ===== HEADER =====
+
+\begin{center}
+    \begin{minipage}[b]{0.24\textwidth}
+            \large +91-9867143600 \\
+            \large \href{mailto:iqbal.osama@icloud.com}{iqbal.osama@icloud.com} 
+    \end{minipage}% 
+    \begin{minipage}[b]{0.5\textwidth}
+            \centering
+            {\Huge Osama Iqbal} \\ 
+            \vspace{0.1cm}
+            {\color{CarianBlue}\Large{Associate Application Engineer}}
+    \end{minipage}% 
+    \begin{minipage}[b]{0.28\textwidth}
+            \flushright \large
+            {\href{https://www.linkedin.com/in/osamaiqbal/}{linkedin.com/in/osamaiqbal} } 
+    \end{minipage}   
+    
+\vspace{-0.15cm} 
+{\color{CarianBlue} \hrulefill}
+\end{center}
+
+\justify
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{12pt}
+\vspace{0.2cm}
+\begin{center}
+    {\color{CarianBlue} \Large{COVER LETTER}}
+\end{center}
+
+% ===== END HEADER =====
+
+% ===== BEGIN DOCUMENT =====
+Date: \today \par \vspace{-0.1cm}
+
+Human Resources, \\
+CompanyName, \\
+City, Country.
+
+
+Dear Recruiter,  % OR To whom this may concern, 
+
+I'm writing to express my interest in the position of “XYZ”, which I came across on LinkedIn. Over the past five years, I've been employed at Nomura Services India Pvt. Ltd. I received a promotion in 2020, increasing my responsibilities to include planning and software architecture design. Recently, I've been working on LLVM and compilers of porting our entire Risk Management suite to a new compiler infrastructure, and a detailed study of the LLVM IR to optimise it to run it on ARM based CPUs, along with designing and coding a system for gathering statistics and monitoring usage with a phone-home styled API for our CPU-based Distributed Compute Library, called as Compute Grid. \par
+ 
+I've worked extensively in optimising Python-based libraries, explicitly getting into core python interpreter code and speeding it up for a specific use-case, thereby reducing the time taken by a Regulatory Reporting process from 15 seconds to 100 milliseconds. I spent my initial years working at Nomura writing a simple rules-based engine, trying to be an alternative to Rete algorithm-based Rules Engine, which has largely been successful. The optimisation has helped reduce the number of servers translating to significant cost saves. My work has also involved the extensive usage of the Numpy/Pandas/Scikit stack for numerical analysis, along with a seamless layer to translate the atomic structures of these libraries to our SsVariant type in C++. Our teams have no Quality Assurance Engineers, and hence, our unit tests must be rock-solid, along with the writing of an "integration test suite" to run on our Jenkins based CI servers for nightly releases. \par
+
+This year, I made a switch and my responsibilities at Canada Pension Plan included designing and delivering migration of OneTick database from On-Premise Servers to AWS, along with delivery of regulatory enhancements for DASH, the one-stop Order Management System for all products traded by Canada Pension Plan, Investment Banking. \par
+
+I've also done a bit of Freelancing, involving a project which caters to medical diagnosis using Deep Learning. The target at this point is X-RAY and CT-Scan based Lung Nodule Analysis and visualisations using OHIF (Open Health Imaging Foundation) libraries. It also involved completing a MEL-sepstrum based application that acts as a Covid Detector based on coughs. I've also run a Machine Learning working group at Nomura, whose experience in teaching a diverse set of people has helped me learn the basics of AI/ML and formulate a course which was released as a part of Nomura's EdTech initiative. \par
+
+In my personal spare time, I've created projects such as an automated vaccinator booking script using REST endpoints, open sourced on Github. I’ve also been involved in discussion and contributions around "QMK", an open-source project for keyboard drivers. \par
+
+It would be a tremendous privilege to bring my skills to your position. Thank you for considering my application. If you have any questions, please do not hesitate to contact me at +91-9867143600 or iqbal.osama@icloud.com. \par
+
+% ===== SIGNATURE =====
+
+\vspace{0.5cm}
+\raggedright
+Yours Sincerely \\ Osama iqbal \\ +91-9867143600 \\ \href{mailto:iqbal.osama@icloud.com}{iqbal.osama@icloud.com}
+
+% ===== END SIGNATURE =====
+% ===== END DOCUMENT =====
+\end{document}
