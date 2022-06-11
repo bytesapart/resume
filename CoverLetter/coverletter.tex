@@ -30,9 +30,9 @@
 \usepackage{ragged2e} % For ragged text
 \usepackage{anyfontsize} % Precision font adjustment 
 \usepackage[margin=1cm]{geometry} % Set margins
-% \usepackage[default,scale=0.9]{opensans} % Set the font typefonts
+\usepackage[default,scale=0.9]{opensans} % Set the font typefonts
 % Alternative Font
-\usepackage[default]{lato}
+% \usepackage[default]{lato}
 
 % ===== Set Page Style =====
 \pagestyle{fancy}
@@ -53,12 +53,16 @@
 \definecolor{CarianBlue}{HTML}{2A3FFB}
 \definecolor{CarianGrey}{HTML}{B3B3B3}
 \rfoot{{\color{CarianGrey} \thepage \ of \ 1, Updated \today}}
+\makeatletter %% <- change @ so that it can be used in command sequences
+\def\myrulefill#1#2{\leavevmode\leaders\hrule\@height#1\@depth#2\hfill \kern\z@}
+\makeatother %% <- change @ back
+\newcommand*\crulefill[1]{\myrulefill{\dimexpr(1ex+#1)/2}{\dimexpr(-1ex+#1)/2}}
 
 
 % ===== Set Heading Format =====
 \titleformat{\section}{
 \color{CarianBlue} \scshape \raggedright \large 
-}{}{0em}{}[\vspace{-0.7cm} \hrulefill \vspace{-0.2cm}]
+}{}{0em}{}[\vspace{-0.7cm} \crulefill{1pt} \vspace{-0.2cm}]
 
 
 \begin{document}
@@ -72,9 +76,9 @@
     \end{minipage}% 
     \begin{minipage}[b]{0.5\textwidth}
             \centering
-            {\Huge Osama Iqbal} \\ 
+            {\Huge \textbf{Osama Iqbal}} \\ 
             \vspace{0.1cm}
-            {\color{CarianBlue}\Large{Associate Application Engineer}}
+            {\color{CarianBlue}\Large{\textbf{Associate Application Engineer}}}
     \end{minipage}% 
     \begin{minipage}[b]{0.28\textwidth}
             \flushright \large
@@ -91,7 +95,7 @@
 \setlength{\parskip}{12pt}
 \vspace{0.2cm}
 \begin{center}
-    {\color{CarianBlue} \Large{COVER LETTER}}
+  {\color{CarianBlue} \Large{\textbf{COVER LETTER}}}
 \end{center}
 
 % ===== END HEADER =====
