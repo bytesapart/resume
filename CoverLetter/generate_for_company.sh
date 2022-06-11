@@ -11,27 +11,27 @@ JOB_NAME=$4
 RECRUITER=$5
 
 
-Replace the stubs in the TeX file
-sed -i "s/CompanyName/$COMPANY_NAME/g" coverletter.tex
-sed -i "s/City/$CITY/g" coverletter.tex
-sed -i "s/Country/$COUNTRY/g" coverletter.tex
-sed -i "s/XYZ/$JOB_NAME/g" coverletter.tex
+# Replace the stubs in the TeX file
+sed -i "0,/CompanyName/s/CompanyName/$COMPANY_NAME/" coverletter.tex
+sed -i "0,/City/s/City/$CITY/" coverletter.tex
+sed -i "0,/Country/s/Country/$COUNTRY/" coverletter.tex
+sed -i "0,/XYZ/s/XYZ/$JOB_NAME/" coverletter.tex
 
 if [ ! -z "$RECRUITER" ]; then
-  sed -i "s/Recruiter/$RECRUITER/g" coverletter.tex
+  sed -i "0,/Recruiter/s/Recruiter/$RECRUITER/" coverletter.tex
 fi
   
-
-pdflatex -jobname=OsamaIqbal_Coverletter_$COMPANY_NAME coverletter.tex
+UNDERSCORE_COMPANY_NAME="${COMPANY_NAME// /_}"
+pdflatex -jobname=OsamaIqbal_Coverletter_$UNDERSCORE_COMPANY_NAME coverletter.tex
 
 # Revert the replacement
-sed -i "s/$COMPANY_NAME/CompanyName/g" coverletter.tex
-sed -i "s/$CITY/City/g" coverletter.tex
-sed -i "s/$COUNTRY/Country/g" coverletter.tex
-sed -i "s/$JOB_NAME/XYZ/g" coverletter.tex
+sed -i "0,/$COMPANY_NAME/s/$COMPANY_NAME/CompanyName/" coverletter.tex
+sed -i "0,/$CITY/s/$CITY/City/" coverletter.tex
+sed -i "0,/$COUNTRY/s/$COUNTRY/Country/" coverletter.tex
+sed -i "0,/$JOB_NAME/s/$JOB_NAME/XYZ/" coverletter.tex
 
 if [ ! -z "$RECRUITER" ]; then
-  sed -i "s/$RECRUITER/Recruiter/g" coverletter.tex
+  sed -i "0,/$RECRUITER/s/$RECRUITER/Recruiter/" coverletter.tex
 fi
 
 
