@@ -37,4 +37,5 @@ if [ ! -z "$RECRUITER" ]; then
   sed -i "0,/$RECRUITER/s/$RECRUITER/Recruiter/" coverletter.tex
 fi
 
-
+# git reset hard because I'm too lazy to fix sed errors
+git checkout HEAD -- coverletter.tex
