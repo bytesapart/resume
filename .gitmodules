@@ -1,0 +1,3 @@
+[submodule "resumeideas"]
+	path = resumeideas
+	url = git@github.com:bytesapart/resumeideas.git
