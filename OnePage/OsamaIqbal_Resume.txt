@@ -1,0 +1,83 @@
+Osama Iqbal
+Mumbai, India
++91-9867143600
+
+iqbal.osama@icloud.com
+
+github.com/bytesapart
+
+linkedin.com/in/osamaiqbal
+
+Experience (6 Years, 2 Months)
+Canada Pension Plan, Investment Banking
+Associate Software Engineer
+
+Mumbai, India
+February, 2022 – Present
+
+• Led and Implemented OneTick Time Series Database Migration from on-prem to AWS cloud, creating and
+implementing custom AWS Architecture.
+• Technologies: OneTick Timeseries, AWS DataSync, AWS Lambda, AWS EC2, AWS Aurora, AWS SNS, AWS SQS,
+AWS EFS, AWS Storage Gateway, C++ MFC.
+Nomura Services India Pvt. Ltd.
+Associate Software Developer
+
+Mumbai, India
+May, 2020 – February, 2022
+
+• Strengthened distributed grid computing to calculate all risks and aggregations, using spare compute cycles
+from more than 1000 computers in Nomura.
+• Pioneered an easier deployment mechanism for computing grid packages to machines, saving 1 hour of
+support time per deployment.
+• Technologies: Python, C++, Boost, Clang, C#, ASM, OpenMP, Intel Intrinsics, AVX2, Jenkins CI/CD, Docker.
+Senior Software Development Analyst
+
+October, 2018 – May, 2020
+
+• Led end-to-end development of a business-critical engine, decoupling developers and business analysts,
+leading to 200+ rule change deployments per day which parses 130k+ live trades.
+
+• Optimized rules engine, improving time from 15 seconds to 70 milliseconds per trade leading to decommissioning of HPC servers.
+
+• Led the adoption of the rules engine for inter-system translations and communications between 4 systems.
+• Technologies: Python, pandas, numpy, Cython, AST, Jupyter, Tibco EMS, Seaborn, Dash, VBA, TDD.
+Software Development Analyst
+
+July, 2016 – October, 2018
+
+• Implemented Common Risk Interchange Format’s (CRIF) Risk data aggregations for 12 legal entities, containing 500K data points each.
+
+• Strengthened quant analytical library by adding 4 different cold-start multi-processing functions.
+• Technologies: Python, PySpark, MapReduce, Hadoop, Dask, Flask, Django, multiproc and multithread libraries, TDD.
+Software Development Intern
+
+January, 2016 – July, 2016
+
+• Conceived a GUI tool that makes FIX 4.4 protocol messages, sending 10k messages to an Exchange Simulator.
+• Created a client-server socket-based distributed test-case runner conﬁgured on spare machines - running 7k
+test cases simultaneously.
+
+• Technologies: Python, QuickFix, win32com, websocket library, PHP, Bootstrap, Javascript, jQuery.
+
+Education
+WorldQuant University
+M.S. Quantitative Finance (80.0%/100.0%)
+Sardar Patel Institute of Technology, Mumbai University
+Master of Computer Application (GPA: 8.29/10.0)
+Valia C.L. College of Science, Mumbai University
+Bachelor of Science (Information Technology) (82.5/100.0)
+
+Mumbai, India
+January, 2017 – January, 2019
+Mumbai, India
+July, 2014 – July, 2016
+Mumbai, India
+July, 2011 – March, 2014
+
+Skills and Certiﬁcations
+Languages: Python, C++, C#, SQL
+Technologies: Pandas, Numpy, Dask, PySpark, Hadoop, Hive, MapReduce, Seaborn, Flask, Django, Cython, Boost,
+OpenMP, ASM, Intel Intrinsics, AVX2, Tibco EMS, Git, Github-Actions, Docker, Jupyter, Jenkins CI/CD, CMake, TDD.
+Certiﬁcations: AWS Certiﬁed Developer Associate, Datacamp Data Scientist with Python.
+
+

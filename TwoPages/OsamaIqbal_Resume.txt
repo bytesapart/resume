@@ -1,0 +1,115 @@
+Osama Iqbal
+Mumbai, India
+Quantitative Developer with six years of experience in creating, optimising and scaling trade reporting and trade
+validation engines in the ﬁxed income sphere of ﬁnancial institutions.
++91-9867143600
+
+iqbal.osama@icloud.com
+
+github.com/bytesapart
+
+linkedin.com/in/osamaiqbal
+
+Experience (6 Years, 2 Months)
+Canada Pension Plan, Investment Banking
+Associate Software Engineer
+
+Mumbai, India
+February, 2022 – Present
+
+• Led and Implemented OneTick Time Series Database Migration from on-prem to AWS cloud, creating and
+implementing custom AWS Architecture.
+
+• Enhanced DASH Order Management System to encorporate Securities Borrowing and Lending Compliance
+quality-of-life improvements.
+• Technologies: AWS, OneTick Timeseries, AWS DataSync, AWS Lambda, AWS EC2, AWS Aurora, AWS SNS, AWS
+SQS, AWS EFS, AWS Storage Gateway, C++ MFC, Python, pandas, numpy.
+Nomura Services India Pvt. Ltd.
+Associate Software Developer
+
+Mumbai, India
+May, 2020 – February, 2022
+
+• Innovated on a ﬁxed income quant library requiring optimising for low-level L3 cache for 50+ general-purpose
+functions.
+• Strengthened distributed grid computing to calculate all risks and aggregations, using spare compute cycles
+from more than 1000 computers in Nomura.
+• Pioneered an easier deployment mechanism for computing grid packages to machines, saving 1 hour of
+support time per deployment.
+• Technologies: Python, pandas, numpy, C++, Boost, Clang, C#, ASM, OpenMP, Intel Intrinsics, AVX2, Jenkins
+CI/CD, AWS, Docker, TDD.
+Senior Software Development Analyst
+
+October, 2018 – May, 2020
+
+• Engineered a business-critical Rules Engine based on rete algorithm parsing 130k+ live trades.
+• Led end-to-end development of the engine, enabling business analysts to write rules in English or Python,
+decoupling developers, leading to 200+ rule change deployments per day.
+
+• Optimized rules engine, improving time from 15 seconds to 70 milliseconds per trade leading to decommissioning of HPC servers.
+• Led the adoption of the rules engine for inter-system translations and communications between 4 systems.
+• Technologies: Python, pandas, numpy, Cython, AST, Jupyter, Tibco EMS, Seaborn, Dash, VBA, TDD.
+Software Development Analyst
+
+July, 2016 – October, 2018
+
+• Implemented Common Risk Interchange Format’s (CRIF) Risk data aggregations for 12 legal entities, containing 500K data points each.
+
+• Improved end of day ﬁle feeds of around 8K ﬁles for ﬁxed income products, along with market data, in the
+form of curve objects, 30 ﬁles per entity.
+
+• Strengthened quant analytical library by adding 4 different cold-start multi-processing functions.
+• Architectured end-to-end Collateral Sensitivity batches end-of-day batches for generating sensitivities report
+for ﬁxed income assets.
+
+• Technologies: Python, PySpark, MapReduce, Hadoop, Dask, Flask, Django, multiproc and multithread libraries, TDD.
+Software Development Intern
+
+January, 2016 – July, 2016
+
+• Conceived a GUI tool that makes FIX 4.4 protocol messages, sending 10k messages to an Exchange Simulator.
+• Created a client-server socket-based distributed test-case runner conﬁgured on spare machines - running 7k
+test cases simultaneously.
+
+• Reworked critical test case suite to modern coding standards for 3 front-oﬃce systems.
+• Technologies: Python, QuickFix, win32com, websocket library, PHP, Bootstrap, Javascript, jQuery.
+
+Education
+WorldQuant University
+M.S. Quantitative Finance (80.0%/100.0%)
+Sardar Patel Institute of Technology, Mumbai University
+Master of Computer Application (GPA: 8.29/10.0)
+Valia C.L. College of Science, Mumbai University
+Bachelor of Science (Information Technology) (82.5/100.0)
+
+Mumbai, India
+January, 2017 – January, 2019
+Mumbai, India
+July, 2014 – July, 2016
+Mumbai, India
+July, 2011 – March, 2014
+
+Skills
+Languages: Python, C++, C#, SQL
+Technologies: Pandas, Numpy, Dask, PySpark, Hadoop, Hive, MapReduce, Matplotlib, Seaborn, Flask, Django,
+Cython, Boost, OpenMP, ASM, Intel Intrinsics, AVX2, MSSQL, Postgresql, MySQL, Tibco EMS, Git, Github-Actions,
+Docker, Jupyter, Jenkins CI/CD, JIRA, CMake, TDD.
+Working Knowledge: PyTorch, Tensorﬂow, JAX, Reinforcement Learning, Deep Learning, Machine Learning, CUDA,
+C#,Apache Kafka, Typescript, Javascipt, ReactJS, React Native, RESTful services, Microservices, ETL, Databricks,
+vtk.js, itk.js, Groovy, ElasticSearch, Logstash, Kibana, Bazel.
+
+Certiﬁcations
+AWS: Certiﬁed Developer Associate
+Datacamp: Data Scientist (Python)
+Coursera: Machine Learning
+deeplearning.ai: Deeplearning Specialisation
+deeplearning.ai: MLops for Production
+
+Projects and Interests
+• Led a Machine Learning class at Nomura.
+• Contributed to QMK/VIA Keyboard Firmware Open Source Project.
+• Developed Vaccinator API for Covid-19 Vaccination Booking.
+• Created a Toy Compiler using LLVM.
+• Worked with FireSim and Chipyard for RISC-V Emulation.
+
+

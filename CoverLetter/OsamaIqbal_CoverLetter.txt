@@ -1,0 +1,53 @@
++91-9867143600
+iqbal.osama@icloud.com
+
+Osama Iqbal
+Associate Application Engineer
+
+linkedin.com/in/osamaiqbal
+github.com/bytesapart
+
+COVER LETTER
+Date: September 19, 2022
+Human Resources,
+CompanyName,
+City, Country.
+Dear Recruiter,
+I’m writing to express my interest in the aforementioned position. Over the past ﬁve years, I’ve been employed at
+Nomura Services India Pvt. Ltd. I received a promotion in 2020, increasing my responsibilities to include planning and
+software architecture design. Recently, I’ve been working on LLVM and compilers of porting our entire Risk Management
+suite to a new compiler infrastructure, and a detailed study of the LLVM IR to optimise it to run it on ARM based CPUs,
+along with designing and coding a system for gathering statistics and monitoring usage with a phone-home styled API
+for our CPU-based Distributed Compute Library, called as Compute Grid.
+I’ve worked extensively in optimising Python-based libraries, explicitly getting into core python interpreter code and
+speeding it up for a speciﬁc use-case, thereby reducing the time taken by a Regulatory Reporting process from 15
+seconds to 100 milliseconds. I spent my initial years working at Nomura writing a simple rules-based engine, trying to
+be an alternative to Rete algorithm-based Rules Engine, which has largely been successful. The optimisation has helped
+reduce the number of servers translating to signiﬁcant cost saves. My work has also involved the extensive usage of
+the Numpy/Pandas/Scikit stack for numerical analysis, along with a seamless layer to translate the atomic structures of
+these libraries to our SsVariant type in C++. Our teams have no Quality Assurance Engineers, and hence, our unit tests
+must be rock-solid, along with the writing of an ”integration test suite” to run on our Jenkins based CI servers for nightly
+releases.
+This year, I made a switch and my responsibilities at Canada Pension Plan included designing and delivering migration
+of OneTick database from On-Premise Servers to AWS, along with delivery of regulatory enhancements for DASH, the
+one-stop Order Management System for all products traded by Canada Pension Plan, Investment Banking.
+I’ve also done a bit of Freelancing, involving a project which caters to medical diagnosis using Deep Learning. The target
+at this point is X-RAY and CT-Scan based Lung Nodule Analysis and visualisations using OHIF (Open Health Imaging
+Foundation) libraries. It also involved completing a MEL-sepstrum based application that acts as a Covid Detector based
+on coughs. I’ve also run a Machine Learning working group at Nomura, whose experience in teaching a diverse set of
+people has helped me learn the basics of AI/ML and formulate a course which was released as a part of Nomura’s
+EdTech initiative.
+In my personal spare time, I’ve created projects such as an automated vaccinator booking script using REST endpoints,
+open sourced on Github. I’ve also been involved in discussion and contributions around ”QMK”, an open-source project
+for keyboard drivers.
+It would be a tremendous privilege to bring my skills to your position. Thank you for considering my application. If you
+have any questions, please do not hesitate to contact me at +91-9867143600 or iqbal.osama@icloud.com.
+
+Yours Sincerely
+Osama iqbal
++91-9867143600
+iqbal.osama@icloud.com
+
+1 of 1, Updated September 19, 2022
+
+
