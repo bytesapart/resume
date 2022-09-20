@@ -10,7 +10,7 @@ linkedin.com/in/osamaiqbal
 
 Experience (6 Years, 2 Months)
 Canada Pension Plan, Investment Banking
-Associate Software Engineer
+Lead Associate Software Engineer
 
 Mumbai, India
 February, 2022 – Present
@@ -20,7 +20,7 @@ implementing custom AWS Architecture.
 • Technologies: OneTick Timeseries, AWS DataSync, AWS Lambda, AWS EC2, AWS Aurora, AWS SNS, AWS SQS,
 AWS EFS, AWS Storage Gateway, C++ MFC.
 Nomura Services India Pvt. Ltd.
-Associate Software Developer
+Associate Quantitative Developer
 
 Mumbai, India
 May, 2020 – February, 2022
