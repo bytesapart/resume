@@ -121,6 +121,7 @@ or X-ray to detect 14 pulmonary diseases.
 
 Projects and Interests
 • Led a Machine Learning class at Nomura.
+• Conducted a Tech Talk at Priceline on "Data Oriented Design".
 • Contributed to QMK/VIA Keyboard Firmware Open Source Project.
 • Developed Vaccinator API for Covid-19 Vaccination Booking.
 • Created a Toy Compiler using LLVM.
